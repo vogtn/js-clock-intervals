@@ -6,14 +6,10 @@ var rotateThisMinute= now.getMinutes() * 6;
 var rotateThisHour = null;
 //handling 24 hour => 12
 if(now.getHours() > 12){
-  rotateThisHour = (now.getHours() -2) * 15;
+  rotateThisHour = (now.getHours()) * 30;
 }else{
-  rotateThisHour = now.getHours() * 30;
+  rotateThisHour = now.getHours() * 15;
 }
-
-console.log(now.getHours())
-
-console.log(rotateThisHour);
 
 var initial = function(){
   document.getElementById("second").style.transform = "rotate(" + rotateThisSecond +"deg)";
