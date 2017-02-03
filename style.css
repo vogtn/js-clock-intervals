@@ -11,20 +11,15 @@ body{
 
 #hour {
   position: absolute;
-  animation: spin infinite 43200s linear;
+  transform: rotate(0deg);
 }
 
 #minute {
   position: absolute;
-  animation: spin infinite 3600s linear;
+  transform: rotate(0deg);
 }
 
 #second {
   position: absolute;
-  animation: spin infinite 60s linear;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  transform: rotate(0deg);
 }
