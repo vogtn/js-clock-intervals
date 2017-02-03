@@ -1,14 +1,30 @@
+body{
+  text-align: center;
+}
 #clock {
+  position: absolute;
 }
 
 #clock img {
+  position: absolute;
 }
 
 #hour {
+  position: absolute;
+  animation: spin infinite 43200s linear;
 }
 
 #minute {
+  position: absolute;
+  animation: spin infinite 3600s linear;
 }
 
 #second {
+  position: absolute;
+  animation: spin infinite 60s linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
