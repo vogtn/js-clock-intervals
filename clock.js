@@ -8,7 +8,7 @@ var rotateThisHour = null;
 if(now.getHours() > 12){
   rotateThisHour = (now.getHours()) * 30;
 }else{
-  rotateThisHour = now.getHours() * 15;
+  rotateThisHour = (now.getHours() * 2) * 15;
 }
 
 var initial = function(){
